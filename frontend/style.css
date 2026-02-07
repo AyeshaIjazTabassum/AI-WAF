@@ -1,0 +1,122 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background and main container */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  padding: 30px 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Header */
+header h1 {
+  text-align: center;
+  color: #1e3c72;
+  font-size: 2rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+/* Analyzer Section */
+.analyzer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #1e3c72;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #2a5298;
+}
+
+/* Result Section */
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f1f1f1;
+  transition: all 0.3s ease;
+}
+
+.result.hidden {
+  display: none;
+}
+
+.result p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.intent {
+  font-weight: bold;
+}
+
+.risk-score {
+  font-weight: bold;
+}
+
+.risk-low {
+  color: green;
+}
+
+.risk-medium {
+  color: orange;
+}
+
+.risk-high {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
