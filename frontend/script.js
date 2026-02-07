@@ -18,6 +18,7 @@ analyzeBtn.addEventListener("click", async () => {
     });
 
     const data = await response.json();
+    console.log("BACKEND RESPONSE:", data);
 
     // Determine risk color
     let riskClass = "risk-low";
