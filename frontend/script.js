@@ -11,7 +11,7 @@ analyzeBtn.addEventListener("click", async () => {
   resultDiv.innerHTML = "<p>Analyzing...</p>";
 
   try {
-    const response = await fetch("https://ai-waf-production.up.railway.app", {
+    const response = await fetch("https://ai-waf-production.up.railway.app/analyze-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt })
