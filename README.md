@@ -6,7 +6,7 @@
 ## Demo
 
 - **Frontend:** [Netlify Deployment URL](https://ai-waf.netlify.app/)  
-- **Backend API:** [Railway Deployment URL](https://ai-waf-production.up.railway.app/)  
+- **Backend API:** [Railway Deployment URL](https://ai-waf-production.up.railway.app/docs)  
 
 > Use the frontend to test prompts and see real-time risk analysis.
 
