@@ -42,8 +42,8 @@
 #         }
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.schemas import PromptRequest, IntentResponse
-from app.agents.intent_agent import analyze_intent
+from backend.app.schemas import PromptRequest, IntentResponse
+from backend.app.agents.intent_agent import analyze_intent
 import json
 
 app = FastAPI(title="Solva AI WAF – Intent Analyzer")
